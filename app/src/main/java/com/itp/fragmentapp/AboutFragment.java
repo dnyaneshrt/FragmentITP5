@@ -8,17 +8,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-/*steps to create fragment java file.
-1] create a Java class as a child of androidx.fragment.app.Fragment.
-2] same like onCreate() method in MainACtivity, onCreateView() method invokes in Fragment
-*
-*/
-public class HomeFragment extends Fragment {
+
+public class AboutFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+  View view= inflater.inflate(R.layout.about_fragment,container,false);
+        return  view;
 
-        View view=inflater.inflate(R.layout.home_fragment,container,false);
-        return view;
     }
 }
